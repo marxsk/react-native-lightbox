@@ -41,7 +41,7 @@ export default class Lightbox extends Component {
     layoutOpacity: new Animated.Value(1),
   };
 
-  getContent: function() {
+  getContent = () => {
     if((this.props.renderContent) && (this.props.activeProps)) {
       return this.props.renderContent(this.props.activeProps);
     } else if(this.props.renderContent) {
